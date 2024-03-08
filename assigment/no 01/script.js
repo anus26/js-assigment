@@ -31,17 +31,91 @@
 
 
 
-var head=document.querySelector('.head');
-var paragraph=document.querySelector("#para");
-console.log(paragraph.innerHTML);
+// var head=document.querySelector('.head');
+// var paragraph=document.querySelector("#para");
+// console.log(paragraph.innerHTML);
 
-function changeText(){
-    if(paragraph.innerHTML ==='changed through js '&& head.innerHTML === 'changed through js'){
-paragraph.innerHTML ='pakistan zindabad';
-head.innerHTML = 'hi'
-    }else{
-        paragraph.innerHTML ='changed through js'
-        head.innerHTML ='changed through js'
+// function changeText(){
+//     if(paragraph.innerHTML ==='changed through js '&& head.innerHTML === 'changed through js'){
+// paragraph.innerHTML ='pakistan zindabad';
+// head.innerHTML = 'hi'
+//     }else{
+//         paragraph.innerHTML ='changed through js'
+//         head.innerHTML ='changed through js'
+//     }
+// // }
+
+ 
+
+
+// var chemistryMarks =document.querySelector('#chemistry-marks');
+// var mathsMarks =document.querySelector('#maths-marks');
+// var islamitMarks =document.querySelector('#islamit-marks');
+// var physicsMarks =document.querySelector('#physics-marks');
+// var studentTotal =document.querySelector('#total-marks');
+// var studentPercentage=document.querySelector('#studentPercentage');
+// var grade =document.querySelector('#grade');
+
+// function submit(){
+//     console.log(chemistryMarks.value);
+//     console.log(mathsMarks.value);
+//     console.log(islamitMarks.value);
+//     console.log(physicsMarks.value);
+
+//     var totalMarks= 400;
+//     var obtainedMarks = +chemistryMarks.value + +mathsMarks.value + +islamitMarks.value + +physicsMarks.value;
+
+//     console.log('obtained marks ===>', obtainedMarks);
+//     studentTotal.innerHTML =obtainedMarks;
+
+//     var percentage =obtainedMarks/totalMarks*100;
+//     Percentage.innerHTML=studentPercentage;
+
+//     if (studentPercentage >80 ){
+//         grade.innerHTML = 'A+'
+
+//     }else if(studentPercentage>70){
+//         grade.innerHTML ='A'
+//     }else if(studentPercentage >60){
+//         grade.innerHTML ='B'
+//     }else{
+//         grade.innerHTML ='fails'
+//     }
+// }
+
+var urduMarks=document.querySelector('#urdu-marks');
+var accnMarks=document.querySelector('#accn-marks');
+var costMarks=document.querySelector('#cost-marks');
+var studentTotal=document.querySelector('#total-marks');
+var studentPercentage=document.querySelector('#studentPercentage');
+var grade=document.querySelector('#grade');
+
+function calpercentage(){
+    console.log(urduMarks.value);
+    console.log(accnMarks.value);
+    console.log(costMarks.value);
+    var totalMarks=300;
+    var obtainedMarks= +urduMarks.value + +accnMarks.value + +costMarks.value;
+    console.log('obtained marks ===>', obtainedMarks);
+    studentTotal.innerHTML=obtainedMarks;
+
+    var Percentage =obtainedMarks/totalMarks*100;
+    Percentage.innerHTML=studentPercentage;
+
+    if(Percentage >80){
+        grade.innerHTML='A+'
+    }else if(Percentage >70){
+        grade.innerHTML='A'
+    
+    }else if(Percentage >50)[
+        grade.innerHTML='B'
+    ]
+    else{
+        grade.innerHTML='fails'
     }
 }
+
+    
+
+
 

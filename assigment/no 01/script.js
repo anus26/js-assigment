@@ -83,37 +83,52 @@
 //     }
 // }
 
-var urduMarks=document.querySelector('#urdu-marks');
-var accnMarks=document.querySelector('#accn-marks');
-var costMarks=document.querySelector('#cost-marks');
-var studentTotal=document.querySelector('#total-marks');
-var studentPercentage=document.querySelector('#studentPercentage');
-var grade=document.querySelector('#grade');
+// var urduMarks=document.querySelector('#urdu-marks');l-marks');
+// var studentPercentage=document.querySelector('#studentPercentage');
+// var grade=document.querySelector('#grade');
 
-function calpercentage(){
-    console.log(urduMarks.value);
-    console.log(accnMarks.value);
-    console.log(costMarks.value);
-    var totalMarks=300;
-    var obtainedMarks= +urduMarks.value + +accnMarks.value + +costMarks.value;
-    console.log('obtained marks ===>', obtainedMarks);
-    studentTotal.innerHTML=obtainedMarks;
+// function calpercentage(){
+//     console.log(urduMarks.value);
+//     console.log(accnMarks.value);
+//     console.log(costMarks.value);
+//     var totalMarks=300;
+//     var obtainedMarks= +urduMarks.value + +accnMarks.value + +costMarks.value;
+//     console.log('obtained marks ===>', obtainedMarks);
+//     studentTotal.innerHTML=obtainedMarks;
+// var accnMarks=document.querySelector('#accn-marks');
+// var costMarks=document.querySelector('#cost-marks');
+// var studentTotal=document.querySelector('#tota
 
-    var Percentage =obtainedMarks/totalMarks*100;
-    Percentage.innerHTML=studentPercentage;
+//     var Percentage =obtainedMarks/totalMarks*100;
+//     Percentage.innerHTML=studentPercentage;
 
-    if(Percentage >80){
-        grade.innerHTML='A+'
-    }else if(Percentage >70){
-        grade.innerHTML='A'
+//     if(Percentage >80){
+//         grade.innerHTML='A+'
+//     }else if(Percentage >70){
+//         grade.innerHTML='A'
     
-    }else if(Percentage >50)[
-        grade.innerHTML='B'
-    ]
-    else{
-        grade.innerHTML='fails'
+//     }else if(Percentage >50)[
+//         grade.innerHTML='B'
+//     ]
+//     else{
+//         grade.innerHTML='fails'
+//     }
+// }
+
+const sales=['comb','pin' ,'clips', 'fancyitems',  'elastic','azharband','hanger'];
+const input=document.querySelector('#input');
+
+function submit(){
+    console.log(input.value);
+    if(sales.includes(input.value)){
+        console.log('items is avalible');
+
+    }else{
+        console.log('not avalible')
+
     }
 }
+
 
     
 

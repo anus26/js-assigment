@@ -225,24 +225,24 @@ if (browserType.includes("zilla")) {
 
 
 
-const input=document.querySelector("input")
 const education=['SSC','HSC','BSC','BS','BCOM','MS','M.Phil','PhD']
+const input=document.querySelector("#input")
 const arr=[]
 function button() {
-  if (education != null && education.length > 0 ) {
-    for (let i = 0; i < education.length; i++) {
+  // console.log('education.values');
+  if (education !=null && education.length > 0) {
+    for (let i = 0;  i < education.length; i++) {
       console.log(education[i]);
+      input.innerHTML+=`
+      
+      <h1>${education[i]}</h1>`
+      
     }
       
     }else{
       console.log('no education');
-    }
-    
 
-  input.innerHTML+=`
-  
-  `
-  // console.log(education);
+      }
   
 }
 
